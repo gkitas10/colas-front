@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, Link } from 'react-router-dom';
 
 const EmployeeInterface = () => {
     const [ computer , setComputer ] = useState(''); 
@@ -13,7 +13,7 @@ const EmployeeInterface = () => {
     <div>
         <div>
             <div className="col-6">
-                <a className="btn btn-primary">Pantalla publica</a>
+                <Link to='/public-screen'>Pantalla publica</Link>
                 <a className="btn btn-secondary">Crear Tickets</a>
             </div>
         </div>

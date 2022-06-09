@@ -1,13 +1,20 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import { useSearchParams } from 'react-router-dom';
 import socket from '../Socket';
 
 const EmployeeComputer = () => {
-    const [ ticketassigned, setTicketassigned ] = useState({});
+  
+    const [ ticketassigned, setTicketassigned ] = useState('');
+    const [ ticketqueue, setTicketqueue ] =useState('')
     const [searchParams] = useSearchParams();
     const computer = (Object.fromEntries([...searchParams]));
 
-  const handleSubmit = e => {
+    socket.on('ticket-queue', function(data) {
+      console.log(data);
+      setTicketqueue(data)
+    })
+
+    const handleSubmit = e => {
       e.preventDefault();
     socket.emit('assignTicket', computer, function (res) {
         if(res === 'There are no tickets'){
@@ -19,12 +26,20 @@ const EmployeeComputer = () => {
     });
   }
 
+  useEffect(() => {
+    socket.emit('get-queue', 'get-queue', function(data) {
+      console.log(data);
+      setTicketqueue(data)
+    })
+  }, [])
+  
+
   return (
     <div>
         <form onSubmit={handleSubmit}>
         <h1>Escritorio</h1>
         <h4>Atendiendo a <small>{ ticketassigned ? 'Ticket ' + ticketassigned : '...'}</small></h4>
-
+        <div>{ ticketqueue }</div>
         <input type='submit' value='Atender siguiente ticket'/>
         </form>
         
