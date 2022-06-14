@@ -12,9 +12,9 @@ const EmployeeInterface = () => {
   return (
     <div>
         <div>
-            <div className="col-6">
+            <div className="">
                 <Link to='/public-screen'>Pantalla publica</Link>
-                <a className="btn btn-secondary">Crear Tickets</a>
+                <Link to='/create-ticket'>Crear Tickets</Link>
             </div>
         </div>
         <div>
