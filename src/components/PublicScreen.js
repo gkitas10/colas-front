@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import '../styles/PublicScreen.css';
+import styles from '../styles/PublicScreen.module.css';
 import socket from '../Socket';
 
 const PublicScreen = () => {
@@ -25,25 +25,25 @@ const PublicScreen = () => {
     }, [])
     
   return (
-    <div className='public-screen'>
-        <div className="main-cont">
-            <div className="current-ticket">
-                <div className="computer"></div>
-                <div className="ticket-number">{ status.last4.length > 0 ? status.last4[0]?.number : null}</div>
+    <div className={styles.main}>
+        <div className={styles.lastticket_cont}>
+            <div className={styles.lastticket}>
+                <div className={styles.lastticket_number}> Ticket { status.last4.length > 0 ? status.last4[0]?.number : '...'}</div>
+                <div className={styles.lastticket_computer}>Escritorio { status.last4.length > 0 ? status.last4[0]?.computer : '...'}</div>
             </div>
         </div>
-        <div className="side-cont">
-            <div className="next-ticket">
-                <div className="computer"></div>
-                <div className="ticket-number">{ status.last4.length > 0 ? status.last4[1]?.number : null}</div>
+        <div className={styles.sidecontainer}>
+            <div className={styles.secondary_ticket}>
+                <div className={styles.secondary_number}> Ticket { status.last4.length > 1 ? status.last4[1]?.number : '...'}</div>
+                <div className={styles.secondary_computer}>Escritorio { status.last4.length > 1 ? status.last4[1]?.computer : '...'}</div>
             </div>
-            <div className="next-ticket">
-                <div className="computer"></div>
-                <div className="ticket-number">{ status.last4.length > 0 ? status.last4[2]?.number : null}</div>
+            <div className={styles.secondary_ticket}>
+                <div className={styles.secondary_number}> Ticket { status.last4.length > 2 ? status.last4[2]?.number : '...'}</div>
+                <div className={styles.secondary_computer}>Escritorio { status.last4.length > 2 ? status.last4[2]?.computer : '...'}</div>
             </div>
-            <div className="next-ticket">
-                <div className="computer"></div>
-                <div className="ticket-number">{ status.last4.length > 0 ? status.last4[3]?.number : null}</div>
+            <div className={styles.secondary_ticket}>
+                <div className={styles.secondary_number}> Ticket { status.last4.length > 3 ? status.last4[3]?.number : '...'}</div>
+                <div className={styles.secondary_computer}>Escritorio { status.last4.length > 3 ? status.last4[3]?.computer : '...'}</div>
             </div>
         </div>
     </div>
