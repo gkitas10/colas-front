@@ -8,7 +8,7 @@
 .lastticket_cont {
     width: 75%;
     display: flex;
-    background-color: rgb(40,40,40);
+    background-color: #5a6268;
     justify-content: center;
     align-items: center;
 }
@@ -34,7 +34,7 @@
 }
 
 .secondary_ticket {
-    background-color: #6951F0;
+    background-color: #33426D;
     height: 33.33333%;
     display: flex;
     flex-direction: column;
