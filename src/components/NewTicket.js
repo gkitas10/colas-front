@@ -12,13 +12,16 @@ const NewTicket = () => {
         })
     }
   return (
-    <div>
-        <span>
-            Ticket { newticket }
-        </span>
-        <button className={styles.btn} onClick={handleClick}>
-            Generar nuevo ticket
-        </button>
+    <div className={styles.main}>
+        <div className={styles.cont}>
+            <span className={styles.ticket}>
+                Ticket{ newticket ? ' '+newticket : '...' }
+            </span>
+            <button className={styles.btn} onClick={handleClick}>
+                Generar nuevo ticket
+            </button>
+        </div>
+        
     </div>
   )
 }
