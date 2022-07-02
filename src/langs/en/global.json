@@ -1,0 +1,21 @@
+{
+    "employeeinterface":{
+        "title":"Employee interface",
+        "publicscreen":"Public screen",
+        "createticketsscreen":"Create tickets screen",
+        "placeholder":"Counter number",
+        "logonbtn":"Log on"
+    },
+    "publicscreen":{
+        "counter":"Counter"
+    },
+    "newticket":{
+        "generate":"Generate new ticket"
+    },
+    "employeecomputer":{
+        "counter":"Counter",
+        "servingticket":"Serving",
+        "nextticketbtn":"Serve next ticket",
+        "pendingtickets":"Pending tickets"
+    }
+}

@@ -1,8 +1,10 @@
 import React, { useState } from 'react';
 import styles from '../styles/NewTicket.module.css';
 import socket from '../Socket';
+import { useTranslation } from 'react-i18next';
 
 const NewTicket = () => {
+    const { t } = useTranslation()
     const [ newticket, setNewticket ] = useState('');
     console.log(newticket);
 
@@ -18,7 +20,7 @@ const NewTicket = () => {
                 Ticket{ newticket ? ' '+newticket : '...' }
             </span>
             <button className={styles.btn} onClick={handleClick}>
-                Generar nuevo ticket
+                {t("newticket.generate")}
             </button>
         </div>
         

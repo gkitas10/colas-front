@@ -1,0 +1,21 @@
+{
+    "employeeinterface":{
+        "title":"Interfaz de empleado",
+        "publicscreen":"Pantalla pública",
+        "createticketsscreen":"Crear tickets",
+        "placeholder":"Número de escritorio",
+        "logonbtn":"Ingresar"
+    },
+    "publicscreen":{
+        "counter":"Escritorio"
+    },
+    "newticket":{
+        "generate":"Generar nuevo ticket"
+    },
+    "employeecomputer":{
+        "counter":"Escritorio",
+        "servingticket":"Atendiendo a",
+        "nextticketbtn":"Atender siguiente ticket",
+        "pendingtickets":"Tickets por atender"
+    }
+}

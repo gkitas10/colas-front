@@ -12,6 +12,11 @@
     width: 50%;
 }
 
+.select {
+    width: 100px;
+    align-self: flex-end;
+}
+
 .title {
     color: black;
     font-size: 2rem;
@@ -40,6 +45,7 @@
     color: white;
     width: fit-content;
     font-size: 1rem;
+    cursor: pointer;
 }
 
 .link_gray {
