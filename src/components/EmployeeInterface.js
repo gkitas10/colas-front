@@ -47,8 +47,11 @@ const EmployeeInterface = () => {
             <div>
             { alert }
             </div>
+            <div className={styles.about_app}>
+              <Link to='/tutorial'>{t("employeeinterface.about")}</Link>
+            </div>
         </div>
-        
+       
     </div>
 )
 }

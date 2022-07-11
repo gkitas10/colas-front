@@ -4,7 +4,8 @@
         "publicscreen":"Public screen",
         "createticketsscreen":"Create tickets screen",
         "placeholder":"Counter number",
-        "logonbtn":"Log on"
+        "logonbtn":"Log on",
+        "about":"About this app"
     },
     "publicscreen":{
         "counter":"Counter"
@@ -17,5 +18,12 @@
         "servingticket":"Serving",
         "nextticketbtn":"Serve next ticket",
         "pendingtickets":"Pending tickets"
+    },
+    "tutorial":{
+        "step1":"Have you seen the screens in some establishments such as banks or stores where they display the numbers of the tickets that are being served by the employees? Something like this",
+        "step2":"This app is a queue manager. To test it, simulate that you are a client and generate one or more tickets",
+        "step3":"Now pretend to be an employee of the company that is serving customers, enter a number in the form. This will be the counter number",
+        "step4":"By clicking on enter you will be able to see the employee's interface in which the ticket that is being served by the current desk is shown, as well as the tickets that remain to be served.",
+        "step5":"You can open multiple tabs in the browser to simulate more than one employee serving the ticket queue"
     }
 }

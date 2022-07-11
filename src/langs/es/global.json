@@ -4,7 +4,8 @@
         "publicscreen":"Pantalla pública",
         "createticketsscreen":"Crear tickets",
         "placeholder":"Número de escritorio",
-        "logonbtn":"Ingresar"
+        "logonbtn":"Ingresar",
+        "about":"Acerca de esta aplicación"
     },
     "publicscreen":{
         "counter":"Escritorio"
@@ -17,5 +18,12 @@
         "servingticket":"Atendiendo a",
         "nextticketbtn":"Atender siguiente ticket",
         "pendingtickets":"Tickets por atender"
+    },
+    "tutorial":{
+        "step1":"¿Has visto las pantallas en algunos establecimiento como bancos o tiendas en donde se muestran los números de los tickets que están siendo atendidos por los cajeros?. Algo como esto:",
+        "step2":"Esta aplicación es un administrador de colas. Para probarla simula que eres un cliente y genera uno o varios tickets",
+        "step3":"Ahora simula ser un empleado de la empresa que esta atendiendo a los clientes, introduce un número en el formulario. Este será el numero de caja o escritorio",
+        "step4":"Al dar click en ingresar podrás ver la interfaz del empleado en la cual se muestra el ticket que está siento atendido en el escritorio actual así como los tickets que faltan por atender",
+        "step5":"Puedes abrir multiples pestañas en el navegador para simular mas de un empleado atendiendo la cola de tickets"
     }
 }

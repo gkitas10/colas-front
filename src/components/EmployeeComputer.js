@@ -10,7 +10,7 @@ const EmployeeComputer = () => {
     const [ ticketqueue, setTicketqueue ] =useState('')
     const [searchParams] = useSearchParams();
     const computer = (Object.fromEntries([...searchParams]));
-console.log(computer);
+    
     socket.on('ticket-queue', function(data) {
       console.log(data);
       setTicketqueue(data)

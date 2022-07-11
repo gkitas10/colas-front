@@ -1,0 +1,20 @@
+.main {
+    display: flex;
+    flex-direction: column;
+    padding: 2em 4em;
+    font-size: 1.2rem;
+}
+
+.step {
+    margin-bottom: 2em;
+}
+
+.img {
+    width: 50%;
+    align-self: center;
+    margin-bottom: 2em;
+}
+
+.border_img {
+    border: 1px solid #5a6268;
+}
