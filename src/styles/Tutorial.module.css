@@ -1,11 +1,42 @@
 .main {
     display: flex;
     flex-direction: column;
-    padding: 2em 4em;
+    padding: 1em 2em;
     font-size: 1.2rem;
+    background-color: rgba(204,229,255, .5);
 }
 
 .step {
+    margin-bottom: 1em;
+    margin-top: 1em;
+    background-color: rgba(204,229,255, 1);
+    padding: .5em;
+    border-radius: 4px;
+}
+
+.img {
+    margin-bottom: 1em;
+}
+
+.border_img {
+    border: 1px solid #5a6268;
+} 
+
+@media screen and (min-width:768px){
+    .main {
+        font-size: 1.2rem;
+    }
+}
+
+@media screen and (min-width:1220px){
+    .main {
+        padding: 1em 15%;
+    }
+}
+
+
+
+/* .step {
     margin-bottom: 2em;
 }
 
@@ -15,6 +46,4 @@
     margin-bottom: 2em;
 }
 
-.border_img {
-    border: 1px solid #5a6268;
-}
+*/
